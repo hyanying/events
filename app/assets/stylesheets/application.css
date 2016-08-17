@@ -48,6 +48,27 @@ th { border-bottom: 1px solid #DDD; }
   background-color:#b3470d;
 }
 
+.whiteBtn 
+{
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #555!important;
+  font-weight:bold;
+  background: #FFF;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+  border: solid #aaa 1px;
+
+}
+
+.whiteBtn:hover 
+{
+  background: #FFF;
+  border: solid #aaa 1px;
+  text-decoration: none;
+}
+
 .textField
 {
     width:100%;
@@ -147,5 +168,31 @@ th { border-bottom: 1px solid #DDD; }
     height: 4em;
 
 }
+
+/* View Event /////////////////////////////////////////// */
+
+.viewEventContentContainer
+{
+    font-size:1.2em;
+    text-align:left;
+    margin-bottom:10px;
+    line-height:1.3em;
+
+}
+
+.viewEventButtonsContainer
+{
+    font-size:1.2em;
+    padding-top:30px;
+    padding-bottom:20px;
+}
+
+.viewEventButtonHolder
+{
+   padding-bottom:20px;
+
+}
+
+
 
 .testBorder{border:solid 1px red;}

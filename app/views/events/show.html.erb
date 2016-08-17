@@ -1,23 +1,59 @@
-<p id="notice"><%= notice %></p>
-<p>
-  <strong>Title:</strong>
-  <%= @event.title %>
-</p>
+<div class="row newEventContainer text-center">
 
-<p>
-  <strong>Description:</strong>
-  <%= @event.description %>
-</p>
+	<!--side -->
+	<div class="col-lg-2 col-md-0 col-sm-0 col-xs-0"></div>
 
-<p>
-  <strong>Picture:</strong>
-  <%= image_tag(@event.picture_url, width: 600) if @event.picture.present? %>
-</p>
+	<!-- center content -->
+	<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-center">
 
-<p>
-  <strong>Date:</strong>
-  <%= @event.date %>
-</p>
+		<p id="notice"><%= notice %></p>
+		
+		<!-- Event Date -->
+		<div class="viewEventContentContainer">
+			<strong>Date:</strong> <%= @event.date.strftime("%d %b %Y %A") %>
+		</div>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+		<!-- Event Title -->
+		<div class="viewEventContentContainer">    
+			<strong>Title:</strong> <%= @event.title %>		
+		</div>
+
+		<!-- Event Description -->	
+		<div class="viewEventContentContainer"> 
+			<strong>Description:</strong>
+		</div>		
+		<div class="viewEventContentContainer"> 
+			<%= @event.description %>		
+		</div>
+
+		<!-- Event Picture -->
+        <div class="viewEventContentContainer">  
+			<strong>Picture:</strong>
+        </div>
+
+        <div class="viewEventContentContainer">  
+
+			<%= image_tag(@event.picture_url, class: "img-responsive text-center") if @event.picture.present? %>
+		</div>
+
+		<div class="viewEventButtonsContainer">  	
+
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 viewEventButtonHolder">
+			<%= link_to 'Edit', edit_event_path(@event), class: "redBtn btn-block"  %>
+		</div>
+
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 viewEventButtonHolder">
+			<%= link_to 'Back', events_path, class: "whiteBtn btn-block" %>
+		</div>
+			
+		 
+		
+
+		</div>	
+
+	</div>
+
+	<!--side -->
+	<div class="col-lg-2 col-md-0 col-sm-0 col-xs-0"></div>
+
+</div>
