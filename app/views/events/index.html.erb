@@ -1,0 +1,62 @@
+
+<div class="container-fluid">
+  <p id="notice"><%= notice %></p>
+  
+  <div class="row">
+
+    <!--side -->
+    <div class="col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+
+    <!-- center content -->
+    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+      <!-- Events Title -->
+      <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4"><h1>Events</h1>
+      </div>
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 indexAddEvents"><%= link_to 'Add New Event', new_event_path, class: "eventAddNewEventsBtn" %></div>
+
+      </div>
+
+      
+
+      <!-- Events Listing -->
+
+      <% @events.each do |event| %>
+
+      <div class="row rowEvent">
+
+        <!-- image -->
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <%= image_tag(event.picture_url, class: "img-responsive text-center") if event.picture.present? %>
+        </div>
+
+        <!-- events description -->
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+
+          <div class="eventDate"><%= event.date.strftime("%d %b %Y %A") %></div>
+          <div class="eventTitle"><%= event.title %></div> 
+          <div class="eventDescript"><%= event.description %> </div>
+
+          <div class="eventLinks">     
+            <%= link_to 'View', event, class:"eventLinksBtn" %> &nbsp;
+            <%= link_to 'Edit', edit_event_path(event), class:"eventLinksBtn" %> &nbsp;
+            <%= link_to 'Delete', event, class:"eventLinksBtn", method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>  
+        </div>
+
+      </div> 
+
+      <% end %>
+
+      
+    </div>
+
+    <!--side -->
+    <div class="col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+
+
+
+
+
+
+  </div>

@@ -1,0 +1,122 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body
+{ 
+	font-family: Open Sans, Arial;
+	font-size:1.2em;
+	background-color: #EEE;
+}
+
+footer { margin-top: 100px; }
+table, td, th { vertical-align: middle; border: none; }
+th { border-bottom: 1px solid #DDD; }
+
+
+
+.eventsTitle{float:left;}
+
+.indexAddEvents{float:right; text-align:right;}
+
+.rowEvent
+{
+	border:solid 1px #CCC;
+	margin-bottom:15px;
+	padding:15px 0px 15px 0px; 
+	background-color:white;
+}
+
+
+
+.eventDate 
+{
+	font-size:1em;
+	text-transform: uppercase;
+	margin-top:10px;
+	margin-bottom:15px;
+	color:#555;
+}
+
+.eventTitle
+{	
+	font-size:1.8em;
+	line-height:1em;
+	margin-bottom: 20px;
+}
+
+.eventDescript
+{
+	font-size:1em;
+	margin-bottom:30px;
+	line-height:1.3em;
+	color:#555;
+
+}
+
+.eventLinks
+{
+	text-align: left;
+	padding-bottom: 20px;
+
+}
+
+.eventAddNewEventsBtn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #FFF!important;
+  font-weight:bold;
+  background: #c74f0e;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+
+}
+
+.eventAddNewEventsBtn:hover {
+  text-decoration: none;
+  background-color:#b3470d;
+}
+
+.eventLinksBtn {
+  background: #3498db;
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  border-radius: 2px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 1em;
+  background: #ffffff;
+  padding: 5px 10px 5px 10px;
+  border: solid #aaa 1px;
+  text-decoration: none;
+
+}
+
+.eventLinksBtn:hover {
+  background: #fc6f3c;
+  border: solid #fc6f3c 1px;
+  text-decoration: none;
+}
+
+
+.indexAddEvents
+{
+    display: inline-block;
+    vertical-align: bottom;
+    padding:30px 0px 0px 0px;
+}
+
+.testBorder{border:solid 1px red;}
