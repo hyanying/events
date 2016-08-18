@@ -26,8 +26,10 @@
 
     <!-- events description -->
     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      <div class="indexEventDate"><%= event.date.strftime("%d %b %Y %A") %> <span class="indexEventDateHidden" id= <%= event.date%> ><%= event.date%></span> </div> 
 
-      <div class="indexEventDate"><%= event.date.strftime("%d %b %Y %A") %></div>
+      <div class="indexEventTimeLeft"></div> 
+      
       <div class="indexEventTitle"><%= event.title %></div> 
       <div class="indexEventDescript"><%= event.description %> </div>
 
@@ -44,6 +46,7 @@
 
 </div>  
   
+
 
 
 
