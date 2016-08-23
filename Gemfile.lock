@@ -104,7 +104,6 @@ GEM
       sprockets-rails (>= 2.0.0)
     rails-dom-testing (2.0.1)
       activesupport (>= 4.2.0, < 6.0)
-      nokogiri (~> 1.6.0)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     rails_12factor (0.0.3)
@@ -155,7 +154,8 @@ GEM
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
 
-
+PLATFORMS
+  x86-mingw32
 
 DEPENDENCIES
   byebug
