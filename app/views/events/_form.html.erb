@@ -30,9 +30,13 @@
 		</div>
 
 		<div class="field bottomPadding5px">
-			<%= f.label :picture %>
-			<%= f.file_field :picture %><br/>
-			Please upload an image with a minimum width of 1280px.
+			<%= f.label :Image %>
+			<%= f.text_field :image_url, :class => "textField" %></br></br>
+			<!--<%= f.file_field :picture %><br/>-->
+			
+			Please insert an image url.<br/> 
+			For example, try: http://i.imgur.com/egAq1cf.jpg <br/><br/>
+			The image should have a minimum width of 1280px.
 		</div>
 
 		<div class="field bottomPadding20px">

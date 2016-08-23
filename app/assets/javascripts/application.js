@@ -32,23 +32,18 @@ function countDownTimer(dates)
 {		
 	for(var i=0;i<dates.length;i++)
 	{
-		//console.log(dates[i]);	
-
+	
 		var dt = dates[i];
-
 		var end = new Date(dt);
-		end = end.setHours(0, 0, 0, 0, 0);
-
+		var now = new Date();
 		var _second = 1000;
 		var _minute = _second * 60;
 		var _hour = _minute * 60;
 		var _day = _hour * 24;
-
-		var now = new Date();
 		var distance = end - now;
-
 		var nowTemp=now.setHours(0, 0, 0, 0, 0);
 
+		end = end.setHours(0, 0, 0, 0, 0);
 
 		if(nowTemp == end)
 		{

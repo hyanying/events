@@ -27,13 +27,15 @@
 		</div>
 
 		<!-- Event Picture -->
+
         <div class="viewEventContentContainer">  
 			<strong>Picture:</strong>
         </div>
 
         <div class="viewEventContentContainer">  
 
-			<%= image_tag(@event.picture_url, class: "img-responsive text-center") if @event.picture.present? %>
+        	<%= image_tag(@event.image_url, class: "img-responsive text-center") if @event.image_url.present? %>
+			<!--<%= image_tag(@event.picture_url, class: "img-responsive text-center") if @event.picture.present? %>-->
 		</div>
 
 		<div class="viewEventButtonsContainer">  	
